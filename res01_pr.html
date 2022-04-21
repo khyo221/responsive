@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maxiumn-scale=1.5,
+     miniumn-scale=1.0, user-scalable=no">
+    <title>Resposive web</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .box01 {
+        background-color: #ccc;
+    }
+
+    .box02 {
+        background-color: #ddd;
+    }
+
+    .box03 {
+        background-color: #eee;
+    }
+
+    .box04 {
+        background-color: #bbb;
+    }
+
+    div {
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+    }
+
+    .boxA {
+        height: 200px;
+    }
+
+    /* -------------  mobile ----------------- */
+    @media all and (min-width:601px) {
+        .boxA {
+            width: 100%;
+            height: 100px;
+            overflow: hidden;
+        }
+
+        .boxA .box02 {
+            width: 70%;
+            float: left;
+        }
+
+        .boxA .box03 {
+            width: 30%;
+            float: left;
+        }
+    }
+
+
+    @media all and (min-width:769px) {
+        .boxAA {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .boxAA .boxA {
+            width: 60%;
+            float: left;
+        }
+
+        .boxA .box02,
+        .boxA .box03 {
+            width: 50%;
+        }
+
+        .boxAA .box04 {
+            width: 40%;
+            float: left;
+        }
+    }
+
+    @media all and (min-width:1025px) {
+        .box01_outer {
+            width: 100%;
+            background-color: #ddd;
+        }
+
+        .box01 {
+            width: 1024px;
+            margin: 0 auto;
+        }
+
+        .boxAA {
+            width: 1024px;
+            margin: 0 auto;
+        }
+    }
+</style>
+
+<body>
+    <div class="box01_outer">
+        <div class="box01">box01</div>
+    </div>
+    <div class="boxAA">
+        <div class="boxA">
+            <div class="box02">box02</div>
+            <div class="box03">box03</div>
+        </div>
+        <div class="box04">box04</div>
+    </div>
+</body>
+
+</html>

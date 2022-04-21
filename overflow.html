@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .overflow {
+            display: flex;
+        }
+
+        div {
+            width: 200px;
+            height: 300px;
+            border: 1px solid black;
+            margin: 5px;
+            text-align: justify;
+        }
+
+        .box01 {
+            overflow: hidden;
+        }
+
+        .box02 {
+            overflow: auto;
+            /* overflow:scroll 스크롤 가로로도 생김 */
+        }
+
+        .box03 {
+            overflow-y: scroll;
+            /* 자식의 가로사이즈가 크고 프레임안의 내용만 보이게 할경우
+            (이미지 슬라이더) 가로스크롤을 사용 overflow-x:scroll */
+        }
+
+        .box04 {
+            width: 300px;
+            white-space: nowrap;
+            /* 줄바꿈 X */
+            overflow: hidden;
+            text-overflow: ellipsis;
+            /* 한줄일 때 */
+        }
+
+        .column {
+            width: 1000px;
+            height: 500px;
+            border: 1px solid black;
+            text-align: justify;
+            column-count: 2;
+            /* 칼럼 갯수 */
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="overflow">
+        <div class="box01">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Illo veniam maxime laudantium, eveniet ullam quas, molestiae repudiandae
+            labore autem suscipit optio eum molestias provident amet nam, voluptate saepe fugiat
+            Sequi dolorum architecto doloremque ab deleniti qui optio unde velit, aspernatur ratione
+            distinctio nisi quo adipisci voluptatem natus odit doloribus soluta, fuga est alias non
+            et dolor maiores ipsa. Saepe tempora beatae fuga, quaerat iste asperiores est sit, bland
+            itiis reiciendis repudiandae suscipit nihil! Illum ea voluptatibus in omnis officia sit
+            quod quos, laudantium reiciendis eaque impedit sed veritatis nesciunt quo? Blanditiis vol
+            uptatum ratione natus neque tenetur praesentium incidunt quas quos tempore, saepe vitae
+        </div>
+        <div class="box02">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Illo veniam maxime laudantium, eveniet ullam quas, molestiae repudiandae
+            labore autem suscipit optio eum molestias provident amet nam, voluptate saepe fugiat
+            Sequi dolorum architecto doloremque ab deleniti qui optio unde velit, aspernatur ratione
+            distinctio nisi quo adipisci voluptatem natus odit doloribus soluta, fuga est alias non
+            et dolor maiores ipsa. Saepe tempora beatae fuga, quaerat iste asperiores est sit, bland
+            itiis reiciendis repudiandae suscipit nihil! Illum ea voluptatibus in omnis officia sit
+            quod quos, laudantium reiciendis eaque impedit sed veritatis nesciunt quo? Blanditiis vol
+            uptatum ratione natus neque tenetur praesentium incidunt quas quos tempore, saepe vitae
+        </div>
+        <div class="box03">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Illo veniam maxime laudantium, eveniet ullam quas, molestiae repudiandae
+            labore autem suscipit optio eum molestias provident amet nam, voluptate saepe fugiat
+            Sequi dolorum architecto doloremque ab deleniti qui optio unde velit, aspernatur ratione
+            distinctio nisi quo adipisci voluptatem natus odit doloribus soluta, fuga est alias non
+            et dolor maiores ipsa. Saepe tempora beatae fuga, quaerat iste asperiores est sit, bland
+            itiis reiciendis repudiandae suscipit nihil! Illum ea voluptatibus in omnis officia sit
+            quod quos, laudantium reiciendis eaque impedit sed veritatis nesciunt quo? Blanditiis vol
+            uptatum ratione natus neque tenetur praesentium incidunt quas quos tempore, saepe vitae
+        </div>
+        <div class="box04">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Illo veniam maxime laudantium, eveniet ullam quas, molestiae repudiandae
+            labore autem suscipit optio eum molestias provident amet nam, voluptate saepe fugiat
+            Sequi dolorum architecto doloremque ab deleniti qui optio unde velit, aspernatur ratione
+            distinctio nisi quo adipisci voluptatem natus odit doloribus soluta, fuga est alias non
+            et dolor maiores ipsa. Saepe tempora beatae fuga, quaerat iste asperiores est sit, bland
+            itiis reiciendis repudiandae suscipit nihil! Illum ea voluptatibus in omnis officia sit
+            quod quos, laudantium reiciendis eaque impedit sed veritatis nesciunt quo? Blanditiis vol
+            uptatum ratione natus neque tenetur praesentium incidunt quas quos tempore, saepe vitae
+        </div>
+    </section>
+    <section class="column">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Illo veniam maxime laudantium, eveniet ullam quas, molestiae repudiandae
+        labore autem suscipit optio eum molestias provident amet nam, voluptate saepe fugiat
+        Sequi dolorum architecto doloremque ab deleniti qui optio unde velit, aspernatur ratione
+        distinctio nisi quo adipisci voluptatem natus odit doloribus soluta, fuga est alias non
+        et dolor maiores ipsa. Saepe tempora beatae fuga, quaerat iste asperiores est sit, bland
+        itiis reiciendis repudiandae suscipit nihil! Illum ea voluptatibus in omnis officia sit
+        quod quos, laudantium reiciendis eaque impedit sed veritatis nesciunt quo? Blanditiis vol
+        uptatum ratione natus neque tenetur praesentium incidunt quas quos tempore, saepe vitae
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Illo veniam maxime laudantium, eveniet ullam quas, molestiae repudiandae
+        labore autem suscipit optio eum molestias provident amet nam, voluptate saepe fugiat
+        Sequi dolorum architecto doloremque ab deleniti qui optio unde velit, aspernatur ratione
+        distinctio nisi quo adipisci voluptatem natus odit doloribus soluta, fuga est alias non
+        et dolor maiores ipsa. Saepe tempora beatae fuga, quaerat iste asperiores est sit, bland
+        itiis reiciendis repudiandae suscipit nihil! Illum ea voluptatibus in omnis officia sit
+        quod quos, laudantium reiciendis eaque impedit sed veritatis nesciunt quo? Blanditiis vol
+        uptatum ratione natus neque tenetur praesentium incidunt quas quos tempore, saepe vitae
+        Illo veniam maxime laudantium, eveniet ullam quas, molestiae repudiandae
+        labore autem suscipit optio eum molestias provident amet nam, voluptate saepe fugiat
+        Sequi dolorum architecto doloremque ab deleniti qui optio unde velit, aspernatur ratione
+        distinctio nisi quo adipisci voluptatem natus odit doloribus soluta, fuga est alias non
+        et dolor maiores ipsa. Saepe tempora beatae fuga, quaerat iste asperiores est sit, bland
+        itiis reiciendis repudiandae suscipit nihil! Illum ea voluptatibus in omnis officia sit
+        quod quos, laudantium reiciendis eaque impedit sed veritatis nesciunt quo? Blanditiis vol
+        uptatum ratione natus neque tenetur praesentium incidunt quas quos tempore, saepe vitae
+    </section>
+
+
+
+
+
+
+
+</body>
+
+</html>
