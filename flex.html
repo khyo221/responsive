@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex_Box</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    section {
+        width: 1000px;
+        height: 600px;
+        background: #ccc;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: flex-start;
+        /* 한줄일때 새로정렬 align-items: ; 으로 nowrap된상태 */
+        /* 두줄 이상 컨텐츠 배차 flex wrap이랑 같이 사용 align-content: spaave 투인;가능 */
+        /* display: inline-flex; */
+        /* 부모에 width를 주지않고 inline-flex; 주면 자식에게 사이즈를 주고 자식사이즈 크기만큼 부모가 벌어짐 */
+
+    }
+
+    div {
+        border: 1px solid black;
+        box-sizing: border-box;
+        width: 200px;
+        /* 자식 너비 생략  */
+        height: 100px;
+        /* flex-grow: 1; 자식안의 여백을 균등하게 맞추는것 */
+        /* flex: 1;  순수 박스의 사이즈를 균등하게 맞추는것 */
+        /* flex-shrink: 1; */
+        margin: 10px;
+    }
+
+    /* grow와 반대 */
+    /* .box01 {
+        flex-shrink: 2;
+    }
+
+    .box02 {
+        flex-shrink: 3;
+    }
+
+    .box03 {
+        flex-shrink: 1;
+    } */
+    .box01 {
+        height: 200px;
+    }
+
+    .box02 {
+        height: 150px;
+    }
+
+    .box03 {
+        height: 200px;
+    }
+
+    .box04 {
+        height: 200px;
+    }
+
+    .box05 {
+        height: 200px;
+    }
+
+    .box06 {
+        height: 80px;
+    }
+
+    /* 여백쓸땐 퍼센트 말고 픽셀로 */
+</style>
+
+<body>
+    <section>
+        <div class="box01">box01</div>
+        <div class="box02">box02</div>
+        <div class="box03">box03</div>
+        <div class="box04">box04</div>
+        <div class="box05">box05</div>
+        <div class="box06">box06</div>
+        <div class="box07">box07</div>
+        <div class="box08">box08</div>
+        <div class="box09">box09</div>
+    </section>
+
+
+
+
+
+</body>
+
+</html>

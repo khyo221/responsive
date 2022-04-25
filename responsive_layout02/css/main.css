@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Noto Sans KR', sans-serif;
+
+}
+
+header {
+    width: 50px;
+    margin: 10px auto;
+}
+
+img {
+    width: 100%;
+}
+
+.lnb {
+    display: flex;
+    color: white;
+    background: black;
+    padding: 10px 0;
+    margin-bottom: 20px;
+
+}
+
+.lnb li {
+
+    margin-left: 10px;
+    text-align: center;
+}
+
+.lnb_btn {
+    margin-bottom: 20px;
+}
+
+.lnb_btn button {
+    background: #ccc;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+}
+
+
+
+.article .title_color {
+    background: black;
+    width: 15px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.article_title01,
+.article_title02 {
+    display: flex;
+    margin: 20px 0;
+}
+
+/* ---------- icon ------------- */
+.sns {
+    display: flex;
+    height: 50px;
+    line-height: 50px;
+    margin: 20px 0;
+    font-size: 24px;
+    text-align: center;
+    color: white;
+
+}
+
+.sns .icon_t {
+    flex-grow: 1;
+    background: rgb(60, 145, 224);
+}
+
+.sns .icon_f {
+    flex-grow: 1;
+    background: rgb(64, 63, 155);
+}
+
+.sns .icon_g {
+    flex-grow: 1;
+    background: rgb(214, 78, 78);
+}
+
+
+
+
+
+
+.relative_article .sohoimg {
+    display: flex;
+    width: 50%;
+}
+
+.brand_story i {
+    transform: rotate(-90deg);
+}
+
+.relative_article_img {
+    display: flex;
+    flex-wrap: wrap;
+    background: #ccc;
+    justify-content: space-around;
+}
+
+.relative_article h2 {
+    background: #ccc;
+}
+
+.relative_article_img>div {
+    width: 40%;
+}
+
+
+.interview picture {
+    position: relative;
+}
+
+.txt {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: black;
+    color: white;
+}
+
+.best_article>div {
+    display: flex;
+    width: 100%;
+}
+
+.best_article>div div {
+    width: 50%;
+}
+
+.best_article>div p {
+    flex-grow: 1;
+
+}
+
+/* medeia  query */
+@media all and (min-width: 768px; ) {
+    interview/
+}
+
+
+
+@media all and (min-width: 1024px; ) {}
