@@ -8,7 +8,11 @@
 
 }
 
-header {
+.header {
+    width: 100%;
+}
+
+.logo {
     width: 50px;
     margin: 10px auto;
 }
@@ -70,6 +74,11 @@ img {
 
 }
 
+.sns span {
+    display: none;
+
+}
+
 .sns .icon_t {
     flex-grow: 1;
     background: rgb(60, 145, 224);
@@ -86,19 +95,11 @@ img {
 }
 
 
-
-
-
-
-.relative_article .sohoimg {
-    display: flex;
-    width: 50%;
-}
-
 .brand_story i {
     transform: rotate(-90deg);
 }
 
+/* relative article */
 .relative_article_img {
     display: flex;
     flex-wrap: wrap;
@@ -127,25 +128,98 @@ img {
     color: white;
 }
 
-.best_article>div {
+
+.best_article .magazine {
     display: flex;
     width: 100%;
-}
-
-.best_article>div div {
-    width: 50%;
-}
-
-.best_article>div p {
-    flex-grow: 1;
+    justify-content: space-between;
 
 }
 
-/* medeia  query */
-@media all and (min-width: 768px; ) {
-    interview/
+.best_article .magazine div {
+    width: 150px;
+}
+
+.footer {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+}
+
+hr {
+    margin: 10px;
 }
 
 
+/* ------------medeia_query----------- */
+@media all and (min-width: 768px) {
 
-@media all and (min-width: 1024px; ) {}
+    .relative_article_img {
+        display: flex;
+        flex-wrap: nowrap;
+        background: #ccc;
+        justify-content: space-around;
+    }
+
+    .relative_article_img div {
+        margin-right: 10px;
+    }
+
+    .relative_article_img div:nth-child(1) {
+        margin-left: 10px;
+    }
+
+    .tablet {
+        display: flex;
+    }
+
+    .brand_story_interview {
+        margin-right: 50px;
+    }
+
+}
+
+@media all and (min-width: 1024px) {
+    .web_tablet {
+        display: flex;
+    }
+
+    .tablet {
+        display: inline;
+    }
+
+    .tablet {
+        margin-left: 10px;
+    }
+
+    .brand_story_interview {
+        margin-right: 0px;
+    }
+
+    .sns span {
+        display: inline;
+    }
+
+    .best_article .magazine div {
+        width: 100%;
+    }
+}
+
+@media all and (min-width: 1280px) {
+    .header_outer {
+        width: 100%;
+
+        background: black;
+    }
+
+    .header {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .wrap {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+}
